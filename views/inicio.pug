@@ -1,0 +1,31 @@
+extends ./layout/index
+
+block slider 
+    .slider         
+        h1 Rio de Janeiro 
+        em aventura
+block contenido     
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in purus vitae ipsum consequat posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt pretium dolor id molestie. Morbi facilisis lobortis nunc ac ultrices. Phasellus vitae metus pellentesque, vehicula dolor at, rutrum quam. Fusce auctor varius
+                p Nunc sed molestie ex. Aenean laoreet consectetur ante a condimentum. Aenean eu velit quis arcu sodales lobortis eu non mi. Fusce aliquet aliquam mauris, eu gravida odio ultrices non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque imperdiet, sem eget tempor dapibus, purus augue consequat diam, eget suscipit ligula purus eget justo. Sed consequat dolor in purus sodales, ut laoreet lectus commodo. Vi
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="inicio_nosotros" class="img-fluid")
+
+        include ./layout/bloque_viajes  
+
+    .descuento 
+        .container 
+            .row       
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Diciembre de 2021 - 21 de Enero de 2022
+                        p.precio $2500 USD 
+    .container 
+        h2.mt-5.text-center Testimoniales
+
+            include ./layout/bloque_testimoniales      
